@@ -21,6 +21,6 @@ prueba2 = intervalo(x=4, y=2)
 print(prueba2)
 print(prueba2.antes())
 
-
+#Probando para que funcione sonar
 
 #print("Hello world 2")
