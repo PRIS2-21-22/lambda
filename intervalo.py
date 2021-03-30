@@ -2,48 +2,49 @@ import constantes
 
 class intervalo:
     
-    def __init__(self,x,y,i,j):
-        self.x = x
-        self.y = y
+    def __init__(self,primer_interv_x,primer_interv_y,segundo_interv_x,segundo_interv_y):
+        """Metodo constructor con el que creamos dos intervalo dando el principio y fin de cada uno"""       
+        self.primer_x = primer_interv_x
+        self.primer_y = primer_interv_y
 
-        self.i = i
-        self.j = j
+        self.segundo_x = segundo_interv_x
+        self.segundo_y = segundo_interv_y
 
     def antes(self):       
-        if (self.y < self.i): 
+        if (self.primer_y < self.segundo_x): 
             return True
         return False
 
     def __str__(self):
-        return "Intervalo 1 => x: {}, y: {}; Intervalo 2 => i: {}, j: {}".format(self.x, self.y, self.i, self.j)
+        return "Intervalo 1 => x: {}, y: {}; Intervalo 2 => x: {}, y: {}".format(self.primer_x, self.primer_y, self.segundo_x, self.segundo_y)
 
     def igual(self):
-        if(self.x == self.i and self.y == self.j):
+        if(self.primer_x == self.segundo_x and self.primer_y == self.segundo_y):
             return True
         return False
     
     def encuentra(self):
-        if(self.y == self.i):
+        if(self.primer_y == self.segundo_x):
             return True
         return False
     
     def solapa(self):
-        if(self.y > self.i):
+        if(self.primer_y > self.segundo_x):
             return True
         return False
     
     def durante(self):
-        if(self.x > self.i and self.y < self.j):
+        if(self.primer_x > self.segundo_x and self.primer_y < self.segundo_y):
             return True
         return False
 
     def comienza(self):
-        if(self.x == self.i and self.y < self.j):
+        if(self.primer_x == self.segundo_x and self.primer_y < self.segundo_y):
             return True
         return False
     
     def finaliza(self):
-        if(self.x > self.i and self.y == self.j):
+        if(self.primer_x > self.segundo_x and self.primer_y == self.segundo_y):
             return True
         return False
 
@@ -51,79 +52,79 @@ class intervalo:
 
 print(constantes.probemos + "ANTES")
 print(constantes.bien)
-prueba = intervalo(x=1, y=2, i=4, j=5)
+prueba = intervalo(primer_interv_x=1, primer_interv_y=2, segundo_interv_x=4, segundo_interv_y=5)
 print(prueba)
 print(prueba.antes())
 print(constantes.mal)
-prueba2 = intervalo(x=4, y=6, i=1, j=3)
+prueba2 = intervalo(primer_interv_x=4, primer_interv_y=6, segundo_interv_x=1, segundo_interv_y=3)
 print(prueba2)
 print(prueba2.antes())
 print("\n")
 
 print(constantes.probemos + "IGUAL")
 print(constantes.bien)
-prueba = intervalo(x=1, y=3, i=1, j=3)
+prueba = intervalo(primer_interv_x=1, primer_interv_y=3, segundo_interv_x=1, segundo_interv_y=3)
 print(prueba)
 print(prueba.igual())
 print(constantes.mal)
-prueba2 = intervalo(x=1, y=3, i=2, j=3)
+prueba2 = intervalo(primer_interv_x=1, primer_interv_y=3, segundo_interv_x=2, segundo_interv_y=3)
 print(prueba2)
 print(prueba2.igual())
 print("\n")
 
 print(constantes.probemos + "ENCUENTRA")
 print(constantes.bien)
-prueba = intervalo(x=1, y=3, i=3, j=6)
+prueba = intervalo(primer_interv_x=1, primer_interv_y=3, segundo_interv_x=3, segundo_interv_y=6)
 print(prueba)
 print(prueba.encuentra())
 print(constantes.mal)
-prueba2 = intervalo(x=1, y=3, i=2, j=6)
+prueba2 = intervalo(primer_interv_x=1, primer_interv_y=3, segundo_interv_x=2, segundo_interv_y=6)
 print(prueba2)
 print(prueba2.encuentra())
 print("\n")
 
 print(constantes.probemos + "SOLAPA")
 print(constantes.bien)
-prueba = intervalo(x=1, y=5, i=3, j=10)
+prueba = intervalo(primer_interv_x=1, primer_interv_y=5, segundo_interv_x=3, segundo_interv_y=10)
 print(prueba)
 print(prueba.solapa())
 print(constantes.mal)
-prueba2 = intervalo(x=1, y=5, i=6, j=10)
+prueba2 = intervalo(primer_interv_x=1, primer_interv_y=5, segundo_interv_x=6, segundo_interv_y=10)
 print(prueba2)
 print(prueba2.solapa())
 print("\n")
 
 print(constantes.probemos + "DURANTE")
 print(constantes.bien)
-prueba = intervalo(x=4, y=8, i=1, j=10)
+prueba = intervalo(primer_interv_x=4, primer_interv_y=8, segundo_interv_x=1, segundo_interv_y=10)
 print(prueba)
 print(prueba.durante())
 print(constantes.mal)
-prueba2 = intervalo(x=1, y=5, i=6, j=10)
+prueba2 = intervalo(primer_interv_x=1, primer_interv_y=5, segundo_interv_x=6, segundo_interv_y=10)
 print(prueba2)
 print(prueba2.durante())
 print("\n")
 
 print(constantes.probemos + "COMIENZA")
 print(constantes.bien)
-prueba = intervalo(x=1, y=5, i=1, j=10)
+prueba = intervalo(primer_interv_x=1, primer_interv_y=5, segundo_interv_x=1, segundo_interv_y=10)
 print(prueba)
 print(prueba.comienza())
 print(constantes.mal)
-prueba2 = intervalo(x=1, y=5, i=3, j=5)
+prueba2 = intervalo(primer_interv_x=1, primer_interv_y=5, segundo_interv_x=3, segundo_interv_y=5)
 print(prueba2)
 print(prueba2.comienza())
 print("\n")
 
 print(constantes.probemos + "FINALIZA")
 print(constantes.bien)
-prueba = intervalo(x=4, y=10, i=3, j=10)
+prueba = intervalo(primer_interv_x=4, primer_interv_y=10, segundo_interv_x=3, segundo_interv_y=10)
 print(prueba)
-print(prueba.solapa())
+print(prueba.finaliza())
 print(constantes.mal)
-prueba2 = intervalo(x=6, y=9, i=6, j=10)
+prueba2 = intervalo(primer_interv_x=6, primer_interv_y=9, segundo_interv_x=6, segundo_interv_y=10)
 print(prueba2)
-print(prueba2.solapa())
+print(prueba2.finaliza())
 print("\n")
 
 
