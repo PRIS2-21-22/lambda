@@ -16,6 +16,7 @@ class intervalo:
         return False
 
     def __str__(self):
+        """Metodo magico que nos imprime los valores iniciales y finales de nuestros intervalos"""
         return "Intervalo 1 => x: {}, y: {}; Intervalo 2 => x: {}, y: {}".format(self.primer_x, self.primer_y, self.segundo_x, self.segundo_y)
 
     def igual(self):
