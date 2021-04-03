@@ -1,5 +1,3 @@
-import constantes
-
 class intervalo:
     
     def __init__(self,primer_interv_x,primer_interv_y,segundo_interv_x,segundo_interv_y):
