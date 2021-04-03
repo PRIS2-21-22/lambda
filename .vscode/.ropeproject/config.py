@@ -4,7 +4,6 @@
 
 def set_prefs(prefs):
     """This function is called before opening the project"""
-
     # Specify which files and folders to ignore in the project.
     # Changes to ignored resources are not added to the history and
     # VCSs.  Also they are not returned in `Project.get_files()`.
@@ -110,5 +109,5 @@ def set_prefs(prefs):
 
 
 def project_opened(project):
-    """This function is called after opening the project"""
+    """This function is called after opening the project."""
     # Do whatever you like here!
