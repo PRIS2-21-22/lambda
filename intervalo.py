@@ -1,7 +1,7 @@
 class intervalo:
 
     def __init__(self,primer_interv_x,primer_interv_y,segundo_interv_x,segundo_interv_y):
-        """Metodo constructor con el que creamos dos intervalo dando el principio y fin de cada uno."""       
+        """Metodo constructor con el que creamos dos intervalo dando el principio y fin de cada uno."""
         self.primer_x = primer_interv_x
         self.primer_y = primer_interv_y
 
@@ -9,7 +9,7 @@ class intervalo:
         self.segundo_y = segundo_interv_y
 
     def antes(self):
-        """Funcion que comprueba si el primer intervalo termina antes de empezar el segundo."""       
+        """Funcion que comprueba si el primer intervalo termina antes de empezar el segundo."""
         if (self.primer_y < self.segundo_x):
             return True
         return False
