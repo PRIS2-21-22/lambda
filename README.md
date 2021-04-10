@@ -2,6 +2,11 @@
 [![IssuesClosed][issuesClosed-shield]][issuesClosed-url]
 [![lastDate][lastDate-shield]][lastDate-url]
 # Proyecto Lambda λ
+<p align="center">
+  <a href="https://github.com/PRIS2/lambda">
+    <img src="Imagenes/lambda.gif" alt="Lambda" width="120" height="160">
+  </a>
+</p>
 
 ## Introducción
 El presente documento tiene por objeto realizar la función de guía sobre el proyecto lambda, asignado como parte del grupo de trabajo de la asignatura Procesos de la Ingeniería del Software 2 al alumno Jose María Morales Miñarro.
@@ -18,6 +23,13 @@ Las herramientas de las que se ha hecho uso para la realización del proyecto so
 Para poder empezar a utilizar el proyecto, lo primero es completar su instalación. Hay dos métodos principales por los que se puede realizar dicho proceso:
 
 ### Método 1: Descarga manual
+Desde la página principal del repositorio, haremos click en el botón verde Code. Se nos abrirá un desplegable; acto seguido, seleccionaremos "Download ZIP", e iniciará la descarga del repositorio, la cual quedará almacenada en un archivo comprimido.
+
+<p align="center">
+    <img src="Imagenes/zip.PNG" alt="Lambda" width="400" height="300">
+  </p>
+
+Cuando la descarga finalice, tan solo tendremos que descomprimirlo haciendo uso de nuestra herramienta favorita, como por ejemplo, [WinRar](https://www.winrar.es/descargas).
 
 ### Método 2: Descarga desde consola
 Para ello, si trabajamos en Windows, deberemos de hacer uso de alguna herramienta especial como [Git Bash](https://gitforwindows.org/), paso que podemos saltar si trabajamos en Linux.
@@ -42,6 +54,9 @@ En cualquier caso, para poder ejecutar el archivo de test, estando en la ubicaci
    $ python3 test_intervalo.py
    ```
 Por otro lado, si estamos haciendo uso de alguna herramienta como [Visual Studio Code](https://code.visualstudio.com/) compatible con Python, con la cual se modifiquen o construyan nuevos archivos .py, la ejecucción se simplifica; tan solo será necesario seleccionar el archivo .py a ejecutar, y se pulsará sobre el triángulo/flecha de color verde.
+<p align="center">  
+   <img src="Imagenes/flecha.PNG" alt="Lambda" width="200" height="100">  
+</p>
 
 ## Desarrollo
 Para obtener más información sobre el desarrollo del software se recomienda revisar:
